@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Castoro:ital@1&family=Sacramento&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./landing.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <section >
+        <!-- <img src="./images/AdobeStock_222748710_Preview.jpeg" id="bg"> -->
+        <h1 id="text">The Big Day</h1>
+        <img src="./images/right flowers.png" id="rightside">
+        <img src="./images/left flowers.png" id="leftside">
+        <img src="./images/bride7.png" id="bride">
+    </section>
+    <section>
+        <div class="container">
+            <div class="text1">
+                <h2 class="headingtext"> We are here to help </h2>
+                <P> Weddings are the most stressful yet joyful expreineces. we are here to take the "stress" out of the experience leaving you the joy to enjoy the day </P>
+            </div>
+            <div class="pic1">
+                <img class="picpic" src="./images/helena-lopes-Vrb_vtQAxJU-unsplash.jpg" alt="">
+            </div>
+            <div class="pic2-">
+                <img class="picpic" src="./images/jumpstory-download20210623-113610.jpg" alt="">
+            </div>
+            <div class="text2"></div>
+            <h1 class="headingtext"> Plan your wedding your way</h1>
+            <P> Plan eveything from you menue choice to your guest RSVP list and visualise them all online in one dashboard. see who is and isnt coming and what menue choices they want at a glance. </P>
+            <div class="text-3">
+                <h1 class="headingtext"> Share with your loved ones</h1>
+                <p> Upload your photos from the day and share them withh all you guests to relive the joy of the day </p>
+            </div>
+            <div class="pic-3"> 
+                <img class="picpic" src="./images/pexels-jonathan-borba-5085330.jpg" alt="">
+            </div>
+          </div>
+    </section>
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/ScrollTrigger.min.js"></script>
+        
+        <script>
+            gsap.to("#bg",{
+                scrollTrigger :{
+                    scrub:1
+                },
+                scale: 1.2
+            });
+        
+            gsap.to("#bride",{
+                scrollTrigger :{
+                    scrub:1
+                },
+                scale: 0.1
+            });
+        
+            gsap.to("#leftside",{
+                scrollTrigger :{
+                    scrub:1
+                },
+                x: -500,
+            });
+        
+            gsap.to("#rightside",{
+                scrollTrigger :{
+                    scrub:1
+                },
+                x: 500,
+            });
+        
+            gsap.to("#text",{
+                scrollTrigger :{
+                    scrub:1
+                },
+                y: 500,
+                z: 500,
+            });
+        
+        
+        </script>
+</body>
+</html>

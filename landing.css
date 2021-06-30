@@ -1,0 +1,149 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section::before {
+    content:'';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width:100%;
+    height: 200px;
+    background: linear-gradient( to top, #fff, transparent);
+    z-index: 100000;
+}
+section h1{
+    /* font-size: 7rem; */
+    font-family: 'Sacramento', cursive;
+    color: palevioletred;
+}
+section img {
+    position: absolute;
+    /* top: 0;
+    left: 0; */
+    /* width:100%; */
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+section img#bride {
+    transform-origin: bottom;
+}
+
+section img#rightside{
+    left:60%;
+    transform-origin: left;
+}
+
+section img#leftside{
+    right:60%;
+    transform-origin: left;
+}
+
+#text {
+    position: relative;
+    /* color: aliceblue; */
+    font-size: 10vw;
+}
+
+.sec{
+    position: relative;
+    padding: 100px;
+}
+
+.sec h3{
+    font-size: 3rem;
+    font-family: 'Castoro', serif;
+    color: palevioletred;
+    margin-bottom: 10px;
+
+}
+
+.sec p{
+    font-size: 1.2rem;
+    color: rgb(6, 3, 36);
+    margin-bottom: 10px;
+
+}
+
+.bit{
+    width:100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+
+#leftsection{
+    padding: 1em;
+    margin-right: 5rem;
+}
+
+#rightsection{
+    /* justify-self: right; */
+
+}
+
+#rightsection img {
+    width:50%;
+    height: auto;
+}
+
+
+.headingtext {
+    font-size: 3rem;
+    font-family: 'Castoro', serif;
+    color: palevioletred;
+    padding: 2%;
+    margin-bottom: 10px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 20px 20px;
+    grid-auto-flow: row;
+    overflow: hidden;
+    grid-template-areas:
+      "text1 pic1 pic1"
+      "pic2- pic2- text2"
+      "text-3 pic-3 pic-3";
+  }
+  
+  .text1 { grid-area: text1; }
+  
+  .pic1 { grid-area: pic1; }
+  
+  .pic2- { grid-area: pic2-; }
+  
+  .text2 { grid-area: text2; }
+  
+  .text-3 { grid-area: text-3; }
+  
+  .pic-3 { grid-area: pic-3; }
+  
+
+
+.picpic{
+    justify-self: right;
+    width: auto;
+    height: 50%;
+}
+
