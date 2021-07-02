@@ -1,0 +1,53 @@
+@import url(https://fonts.googleapis.com/css?family=Amatic+SC:400,700);
+html, body{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: 'Amatic SC', cursive;
+}
+
+/* img{
+  filter: grayscale();
+} */
+.block{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  font-size: 16px;
+}
+.block h2{
+  position: relative;
+  display: block;
+  text-align: center;
+  margin: 0;
+  top:70%;
+  transform: translateY(-50%);
+  font-size: 10vw;
+  color: palevioletred;
+  font-weight: 400;
+}
+
+.block p{
+  position: relative;
+  display: block;
+  text-align: center;
+  margin: 0;
+  top:60%;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  transform: translateY(-50%);
+  color: rgb(255, 255, 255);
+  text-shadow: black;
+  font-size: 1.5vw;
+  
+}
+.img-parallax {
+  width: 100vmax;
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%,0);
+  pointer-events: none
+}
